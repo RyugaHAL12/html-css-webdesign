@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>表を作る</h2>
+	<table border="1">
+		<tr>
+			<th>プラン名</th>
+			<th>料金</th>
+		</tr>
+		<tr>
+			<td>基本プラン</td>
+			<td>最高プラン</td>
+		</tr>
+		<tr>
+			<td>1980円/月</td>
+			<td>980円/月</td>
+		</tr>
+	</table>
+	<p>tableタグで表を作れる</p>
+	<p>trタグ：TableRowの略で表の１行を囲む</p>
+	<p>thタグ：TableHeaderの略で表の見出しをとなるセルを作成</p>
+	<p>tdタグ：TableDataの略で表のデータとなるセルを作成</p>
+	<p>テーブル内のセルの数は同じ数にしないとレイアウトが崩れる</p>
+	<p>見出しがいらない場合はthを省略しても良い</p>
+	<br>
+
+	<h2>横のセルをつなげる</h2>
+	<table border="1">
+		<tr>
+			<th>セル１(th)</th>
+			<th>セル２(th)</th>
+		</tr>
+		<tr>
+			<td>セル３</td>
+			<td>セル４</td>
+		</tr>
+		<tr>
+			<td>セル５</td>
+			<td>セル６</td>
+		</tr>
+	</table>
+	<p>基本となる表</p>
+	<br>
+	
+	<table border="1">
+		<tr>
+			<th colspan="2">セル1+2(th)</th>
+		</tr>
+		<tr>
+			<td>セル３</td>
+			<td>セル４</td>
+		</tr>
+		<tr>
+			<td>セル５</td>
+			<td>セル６</td>
+		</tr>
+	</table>
+	<p>colspan属性をつけるとセルを1つにすることができる</p>
+	<br>
+
+	<h2>縦のセルを1つにする</h2>
+	<table border="1">
+		<tr>
+			<th>セル１(th)</th>
+			<th>セル２(th)</th>
+		</tr>
+		<tr>
+			<td>セル３</td>
+			<td>セル４</td>
+		</tr>
+		<tr>
+			<td>セル５</td>
+			<td>セル６</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1">
+		<tr>
+			<th>セル1(th)</th>
+			<th>セル2(th)</th>
+		</tr>
+		<tr>
+			<td rowspan="2">セル3+セル5</td>
+			<td>セル4</td>
+		</tr>
+		<tr>
+			<td>セル6</td>
+		</tr>
+	</table>
+</body>
+</html>
