@@ -8,7 +8,26 @@
 <body>
 	<h2>Formの作り方</h2>
 	<form action="example.php" method="post" name="contact-form">
-		ここにフォームの部品が入る
+		<p>ここにフォームの部品が入る</p>
+	</form>
+	<br>
+	
+	<h2>1行テキスト入力欄の作り方</h2>
+	<form>
+		名前：<input type="text" placeholder="名字 名前">
+		<p>inputタグ:検索ボックスやテキスト入力エリアを作れる</p>
+		<p>type属性:textやemailを入れることで入力フォーマットを指定できる</p>
+	</form>
+	<br>
+
+	<h2>ラジオボタンの作り方</h2>
+	<form>
+		性別:<input type="radio" name="sex" value="男" checked>男
+		<input type="radio" name="sex" value="女">女
+		<input type="radio" name="sex" value="その他">その他
+		<p>type="radio":radio属性を指定すると、ラジオボタンを作成できる</p>
+		<p>name:属性に同じ名前を指定することで、そのラジオボタンでグループを作成できる</p>
+		<p>同じグループのラジオボタンは１つしか選択できなくなる</p>
 	</form>
 </body>
 </html>
