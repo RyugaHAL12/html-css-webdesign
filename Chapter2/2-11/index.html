@@ -17,6 +17,7 @@
 		名前：<input type="text" placeholder="名字 名前">
 		<p>inputタグ:検索ボックスやテキスト入力エリアを作れる</p>
 		<p>type属性:textやemailを入れることで入力フォーマットを指定できる</p>
+        <p>placeholder属性:テキストボックスにあらかじめ文字を入力しておける</p>
 	</form>
 	<br>
 
@@ -29,5 +30,26 @@
 		<p>name:属性に同じ名前を指定することで、そのラジオボタンでグループを作成できる</p>
 		<p>同じグループのラジオボタンは１つしか選択できなくなる</p>
 	</form>
+
+    <h2>チェックボックスを作る</h2>
+    <form>
+        <input type="checkbox" name="color" value="赤" checked>赤
+        <input type="checkbox" name="color" value="青" >青
+        <input type="checkbox" name="color" value="黄" >黄
+        <input type="checkbox" name="color" value="緑" >緑
+        <p>input type=checkbox → チェックボックスを指定</p>
+        <p>name属性でグループ化</p>
+        <p>value属性で値を設定する</p>
+    </form>
+
+    <h2>送信ボタンを作る</h2>
+    <form>
+        <input type="submit" value="送信">
+        <p>input type=submit → 送信ボタンを作成 </p>
+        <p>value : ボタンの中にいれる文字列</p>
+        <input type="image" src="../../images/sendbutton.png" style="width: 20%; height : 20%">
+        <p>type=image →画像が選択できるようになる。</p>
+        <p>画像はsrc属性で指定する(ほかと一緒)</p>
+    </form>
 </body>
 </html>
