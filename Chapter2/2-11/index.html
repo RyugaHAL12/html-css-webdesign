@@ -18,6 +18,21 @@
 		<p>inputタグ:検索ボックスやテキスト入力エリアを作れる</p>
 		<p>type属性:textやemailを入れることで入力フォーマットを指定できる</p>
         <p>placeholder属性:テキストボックスにあらかじめ文字を入力しておける</p>
+        <p>入力欄に最初からテキストを表示するには？</p>
+        <p>→placeholder属性に最初に表示したいテキストを入れる</p>
+        <input type="text" placeholder="表示したいテキスト">
+        
+        <p>いろんな種類の１行テキスト入力欄</p>
+        <input type="text">
+        <p>text：１行のテキスト(初期値)</p><hr>
+        <input type="search">
+        <p>search：検索する際のテキスト</p><hr>
+        <input type="email">
+        <p>email：メールアドレスを入力する際のテキスト</p><hr>
+        <input type="tel">
+        <p>tel：電話番号を入力する際のテキスト</p><hr>
+        <input type="url">
+        <p>url：URLを入力する際のテキスト</p><hr>
 	</form>
 	<br>
 
@@ -50,6 +65,27 @@
         <input type="image" src="../../images/sendbutton.png" style="width: 20%; height : 20%">
         <p>type=image →画像が選択できるようになる。</p>
         <p>画像はsrc属性で指定する(ほかと一緒)</p>
-    </form>
+    </form><hr>
+
+    <h2>セレクトボックスを作る</h2>
+    <h4>selectタグ+optionタグで作る</h4>
+    <p>選択肢全体をselectタグで囲み、選択項目はoptionタグで囲む</p>
+    <select name="bloodtype" id="bloodtype">
+        <option value="A">A型</option>
+        <option value="B">B型</option>
+        <option value="AB">AB型</option>
+        <option value="O">O型</option>
+        <option value="unknown">不明</option>
+    </select>
+    
+    <h4>selectタグの主な属性</h4>
+    <p>name：セレクトボックスの名前</p>
+    <p>multiple：複数選択が可能かどうか</p>
+    
+    <h4>optionタグの主な属性</h4>
+    <p>value：送信される選択肢の値</p>
+    <p>selected：最初から選択された状態にする時に指定する</p><hr>
+
+    <h2>複数行テキストの入力欄を作るtextareaタグ</h2>
 </body>
 </html>
