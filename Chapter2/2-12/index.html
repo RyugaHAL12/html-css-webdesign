@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-12</title>
+</head>
+<body>
+    <h2>より使いやすいフォームにしてみる</h2>
+    <hr>
+    <h2>フォームのラベルをつくるlabelタグ</h2>
+    <p>ラベルにはlabelタグを使う。</p>
+    <p>labelタグを使えば、フォームのパーツとラベルが関連付けられるため、</p>
+    <p>そのテキストを含んだ選択項目全体がクリックできるようになる</p>
+    <p>例:小さなラジオボタンやチェックボックスをクリックする時に文字をクリックしても選択できる</p>
+    <hr>
+    <p>使い方：ラベルテキストの部分をlabelタグで囲み、for属性をつける</p>
+    <p>inputタグのid属性とlabelタグのfor属性を一致させるとフォームとパーツが関連付けられる</p>
+
+    <input type="checkbox" name="travel" value="日本国内" id="Japan">
+    <label for="Japan">日本国内</label>
+
+    <input type="checkbox" name="travel" value="ヨーロッパ" id="europe">
+    <label for="europe">ヨーロッパ</label>
+
+    <input type="checkbox" name="travel" value="アジア" id="asia">
+    <label for="asia">アジア</label>
+
+    <h3 style="font-weight: bold;">※識別子は必ず１対１になる必要があり、同じファイルで重複はできない※</h3>
+</body>
+</html>
